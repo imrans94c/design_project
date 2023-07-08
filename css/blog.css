@@ -1,0 +1,38 @@
+nav > ul{
+    display:flex;
+   
+}
+
+nav li {
+    list-style:none;
+    margin-right:15px;
+    text-decoration:none;
+}
+
+nav li:hover{
+    background-color: lightgray;
+    width:50px;
+    height:20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color:black;
+}
+
+/* Nested menu style */
+
+nav li .dropdown{
+    display:none;
+    position:absolute;
+    background-color:yellow;
+    pedding-left:10px;
+}
+nav li:hover > .dropdown{
+    display:block;
+}
+
+footer{
+    margin-top:30px;
+    text-align:center;
+}
