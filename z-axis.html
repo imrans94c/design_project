@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            position: relative;
+        }
+        .ring{
+            top:-70px;
+            z-index:5 ;
+        }
+        .boy{
+            z-index: 10;
+        }
+        .water{
+            top:-150px;   
+        }
+
+        h1::after{
+            content: '.pdf';
+            color: red;
+            font-size: 10px;
+            background-color: yellow;
+        }
+
+        h1::before{
+            content: 'start';
+            color: red;
+            font-size: 10px;
+            background-color: yellow;
+        }
+        p::first-letter{
+            font-size: 2em;
+        }
+
+        p::first-line{
+            background-color: yellow;
+        }
+
+        p::selection{
+            background-color: green;;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="./images/boy.svg" alt="">
+        </div>
+        <div class="box ring">
+            <img src="./images/ring.svg" alt="">
+        </div>
+        <div class="box water">
+            <img src="./images/water.svg" alt="">
+        </div>
+    </div>
+
+        <h1>Hello World 1</h1>
+        <h1>Hello World 2</h1>
+        <h1>Hello World 3</h1>
+
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam expedita facilis eius voluptatibus nihil dolorum deserunt natus, mollitia ad commodi?</p>
+        <p>Perferendis in laborum maxime nemo, nostrum necessitatibus corrupti iusto. Necessitatibus nisi officia eveniet repellat minima consectetur placeat fugit rem odit.</p>
+        <p>Sequi quos minima debitis eligendi suscipit veritatis officiis consequuntur in dolores doloribus! Eaque necessitatibus, eius quae error officia ipsam assumenda?</p>
+    
+</body>
+</html>

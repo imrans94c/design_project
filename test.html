@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="test.css">
+    <style>
+        input:focus{
+            color: red;
+            padding-left: 20px;
+            outline: 0;
+            border: 1px solid green;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        li:last-child{
+            color:red;
+        }
+        li:first-child{
+            background-color: green;
+        }
+
+        li:nth-child(3n+1){
+            color:purple;
+        }
+
+        /* li:nth-child(2n+1){
+            color:yellow;
+        }
+
+        li:nth-child(2n){
+            color:pink;
+        } */
+    </style>
 </head>
 <body>
     <h1>He<sup>l</sup>lo</h1>
+
+    <a href="https://google.com/">Google</a>
+    <a href="https://www.youtube.com/watch?v=22q2m5ZTsek">youtube</a>
 
     <time datetime="2020-06-15">june 19, 2023</time><br>
 
@@ -20,6 +54,16 @@
     <meter id="disk" value="0.5"></meter><br>
 
     <progress id=""></progress>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
 
     <details>
         <summary>This is me read about me</summary>
@@ -35,6 +79,8 @@
         <div class="box box2">2</div>
         <div class="box box3">3</div>
     </div>
+
+    <input type="text">
 
     <audio controls src="./assets/audiosong.mp3"></audio><br>
     <video controls width="500px" src="./assets/video.mp4"></video>
